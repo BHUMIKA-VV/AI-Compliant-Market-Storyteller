@@ -133,29 +133,3 @@ The system includes built-in rules for:
 
 This is a proof of concept demonstration.
 
-## POC Quick Start (local)
-
-- The repository includes a lightweight development mock so you can run the POC without a Supabase project.
-- Steps (PowerShell):
-
-```powershell
-npm install
-npm run dev
-# Open the URL printed by Vite (usually http://localhost:5173 or http://localhost:5174)
-```
-
-- To use a real Supabase backend, create a `.env` file in the project root and set:
-
-```
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJ...your_anon_key...
-```
-
-- Restart the dev server after adding env vars — the app will automatically use the real Supabase client when both variables are present.
-
-Notes
-- The mock is implemented in `src/lib/supabase.ts` and contains sample market events, compliance rules, and client profiles derived from the `supabase/migrations` seeds.
-- Generated narratives are inserted (mock) and recorded in-memory for demonstration; they are not persisted across restarts unless you connect a real Supabase project.
-
-Want more?
-- I can add a persisted demo using `localStorage`, a UI to view saved narratives, or wire the app to your Supabase instance and run the migrations. Tell me which you prefer.
