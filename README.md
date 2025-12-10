@@ -129,6 +129,8 @@ The system includes built-in rules for:
 - Deterministic compliance checking (not purely generative)
 - Supports SEC Reg BI, FINRA 2210, and MiFID II
 
+  
+Demo link : https://ai-compliant-market-storyteller.vercel.app/
 ## License
 
 This is a proof of concept demonstration.
